@@ -105,7 +105,7 @@ const ShuffleGrid = () => {
                 >
                     {/* Transparent black overlay */}
                     <div
-                        className="absolute inset-0 bg-black opacity-50"
+                        className="absolute inset-0 bg-black opacity-25"
                         style={{ zIndex: 1 }}
                     ></div>
                 </motion.div>
