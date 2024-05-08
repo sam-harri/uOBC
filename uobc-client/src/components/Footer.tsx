@@ -9,11 +9,11 @@ const Footer = () => {
                 <div className="flex items-center">
                     {/* Discord Button */}
                     <a href="https://discord.gg/yourlink" className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-red-900 mr-4" target="_blank" rel="noopener noreferrer">
-                        <Image src="/discord.svg" alt="Discord" width={24} height={24} /> {/* Updated with Image component */}
+                        <Image src="/uOBC//discord.svg" alt="Discord" width={24} height={24} /> {/* Updated with Image component */}
                     </a>
                     {/* Instagram Button */}
                     <a href="https://instagram.com/uottawaboxingclub" className="flex items-center justify-center h-10 w-10 rounded-full bg-white text-red-900" target="_blank" rel="noopener noreferrer">
-                        <Image src="/instagram.svg" alt="Instagram" width={24} height={24} /> {/* Updated with Image component */}
+                        <Image src="/uOBC//instagram.svg" alt="Instagram" width={24} height={24} /> {/* Updated with Image component */}
                     </a>
                 </div>
             </div>
