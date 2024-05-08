@@ -21,7 +21,7 @@ const ShuffleHero = () => {
             <nav className="bg-red-900 text-white py-4">
                 <div className="flex items-center justify-between w-full mx-auto px-5">
                     <div className="flex items-center">
-                        <Image src="https://sam-harri.github.io/uOBC/logouobc.png" alt="uOBC Logo" width={40} height={40} className="rounded-full" />
+                        <Image src="/uOBC/logouobc.png" alt="uOBC Logo" width={40} height={40} className="rounded-full" unoptimized/>
                     </div>
                 </div>
             </nav>
