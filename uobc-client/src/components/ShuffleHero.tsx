@@ -8,9 +8,9 @@ const ShuffleHero = () => {
         const target = document.getElementById('registration-section');
         if (target) {
             target.scrollIntoView({
-                behavior: 'smooth', // For a smooth scroll animation
-                block: 'center',    // Center the element in the viewport
-                inline: 'nearest'   // Adjust horizontally as needed
+                behavior: 'smooth',
+                block: 'center',
+                inline: 'nearest'
             });
         }
     };
@@ -21,7 +21,7 @@ const ShuffleHero = () => {
             <nav className="bg-red-900 text-white py-4">
                 <div className="flex items-center justify-between w-full mx-auto px-5">
                     <div className="flex items-center">
-                        <Image src="/uOBC/logouobc.jpg" alt="uOBC Logo" width={40} height={40} className="rounded-full" />
+                        <Image src="url(/uOBC/logouobc.png)" alt="uOBC Logo" width={40} height={40} className="rounded-full" />
                     </div>
                 </div>
             </nav>
