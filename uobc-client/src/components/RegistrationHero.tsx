@@ -7,7 +7,7 @@ const RegistrationHero = () => {
         <>
             {/* Main section */}
             <section className="w-4/5 mx-auto px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-                <div>
+                <div id="registration-section">
                     <ClassRegistrationForm />
                 </div>
                 <div className="space-y-4">

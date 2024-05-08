@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Footer = () => {
     return (
         <footer className="bg-red-900 text-white py-4">
-            <div className="flex items-center justify-between w-full mx-auto px-5">
+            <div className="flex items-center justify-center w-full mx-auto px-5">
                 {/* ... other content ... */}
                 <div className="flex items-center">
                     {/* Discord Button */}

@@ -4,6 +4,17 @@ import { useEffect, useState } from "react";
 import Image from 'next/image';
 
 const ShuffleHero = () => {
+    const scrollToRegistration = () => {
+        const target = document.getElementById('registration-section');
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth', // For a smooth scroll animation
+                block: 'center',    // Center the element in the viewport
+                inline: 'nearest'   // Adjust horizontally as needed
+            });
+        }
+    };
+
     return (
         <>
             {/* Navbar section */}
@@ -14,6 +25,7 @@ const ShuffleHero = () => {
                     </div>
                 </div>
             </nav>
+
             {/* Main section */}
             <section className="w-4/5 px-8 py-12 grid grid-cols-1 md:grid-cols-2 items-center gap-8 mx-auto">
                 <div>
@@ -24,10 +36,9 @@ const ShuffleHero = () => {
                         University of Ottawa Boxing Club
                     </h3>
                     <p className="text-base md:text-lg text-slate-700 my-4 md:my-6">
-                        Welcome to the uOBC! Located in the Montpetit Martial Arts room, our club is the perfect place for
-                        students of all skill levels to come together and explore the exciting world of boxing.
+                        Welcome to the uOBC! Located in the Montpetit Martial Arts room, our club is the perfect place for students of all skill levels to come together and explore the exciting world of boxing.
                     </p>
-                    <button className="bg-red-900 border-2 text-white border-transparent font-medium py-2 px-4 rounded transition-all hover:bg-transparent hover:text-red-900 hover:border-red-900  active:scale-95">
+                    <button onClick={scrollToRegistration} className="bg-red-900 border-2 text-white border-transparent font-medium py-2 px-4 rounded transition-all hover:bg-transparent hover:text-red-900 hover:border-red-900 active:scale-95">
                         Find a class
                     </button>
                 </div>
@@ -55,72 +66,10 @@ const ShuffleGrid = () => {
         return newArray;
     };
 
-    const squareData = [
-        {
-            id: 123,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 234,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 345,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 456,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 567,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 678,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 789,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 890,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 901,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 1012,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 1123,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 1234,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 1345,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 1456,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 1567,
-            src: "https://placehold.co/400"
-        },
-        {
-            id: 1678,
-            src: "https://placehold.co/400"
-        },
-    ];
+    const squareData = Array.from({ length: 16 }, (_, index) => ({
+        id: index + 1,
+        src: `/uOBC/${index + 1}.jpg`, // Relative path from the public folder
+    }));
 
     const [shuffledSquares, setShuffledSquares] = useState(() => shuffleArray(squareData));
 

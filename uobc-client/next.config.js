@@ -5,7 +5,7 @@ const nextConfig = {
     },
     basePath: '/uOBC',
   // Add trailing slashes to all URLs
-    trailingSlash: true,
+    trailingSlash: false,
     output: 'export',
 }
 
