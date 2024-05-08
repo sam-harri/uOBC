@@ -1,21 +1,27 @@
-// app/layout.tsx
-import './globals.css';
-import { Metadata } from 'next';
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import Head from 'next/head';
+
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-    title: 'uOBC',
-    description: 'University of Ottawa Signup Website',
-    icons: {
-        icon: '/favicon.ico', // Path relative to the public directory
-    },
-};
+  title: 'uOBC',
+  description: 'Univerity of Ottawa Signup Website',
+  icons: {
+    icon: '/favicon.ico', // Path relative to the public directory
+},
+}
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-    return (
-        <html lang="en">
-            <body>
-                {children}
-            </body>
-        </html>
-    );
+  return (
+      <html lang="en">
+          <Head>
+              <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+          </Head>
+          <body>
+              {children}
+          </body>
+      </html>
+  );
 }
