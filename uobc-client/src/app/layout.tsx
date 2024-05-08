@@ -10,17 +10,16 @@ export const metadata: Metadata = {
   description: 'Univerity of Ottawa Signup Website',
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-
-    <body>
-        {children}
-    </body>
-</html>
-  )
+      <html lang="en">
+          <Head>
+              <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+              <title>Your Website Title</title>
+          </Head>
+          <body>
+              {children}
+          </body>
+      </html>
+  );
 }
