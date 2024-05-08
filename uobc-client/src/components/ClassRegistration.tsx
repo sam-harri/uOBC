@@ -147,9 +147,7 @@ const ClassRegistrationForm = () => {
             <div
                 className="h-40 bg-cover bg-center rounded-t-lg overflow-hidden flex items-center justify-center"
                 style={{
-                    backgroundImage: `url(/uOBC/1.jpg)`,
-                    filter: 'grayscale(100%)',
-                    opacity: '0.5'
+                    backgroundImage: `url(/uOBC/1.jpg)`
                 }}
             >
             </div>
