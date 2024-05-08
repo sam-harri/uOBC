@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
     <Head>
-        <link rel="icon" href="favicon_io/favicon.ico" />
+        <link rel="icon" href="/uOBC/favicon_io/favicon.ico" />
     </Head>
     <body>
         {children}
