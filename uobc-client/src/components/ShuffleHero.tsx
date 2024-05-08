@@ -93,15 +93,22 @@ const ShuffleGrid = () => {
         <div className="grid grid-cols-4 grid-rows-4 h-[450px] gap-1">
             {shuffledSquares.map((sq) => (
                 <motion.div
-                    key={sq.id} // Use the 'id' as the key for each element
+                    key={sq.id}
                     layout
                     transition={{ duration: 1.5, type: "spring" }}
-                    className="w-full h-full"
+                    className="relative w-full h-full"
                     style={{
                         backgroundImage: `url(${sq.src})`,
                         backgroundSize: "cover",
+                        backgroundPosition: "center",
                     }}
-                ></motion.div>
+                >
+                    {/* Transparent black overlay */}
+                    <div
+                        className="absolute inset-0 bg-black opacity-50"
+                        style={{ zIndex: 1 }}
+                    ></div>
+                </motion.div>
             ))}
         </div>
     );
