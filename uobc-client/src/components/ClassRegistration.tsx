@@ -147,12 +147,14 @@ const ClassRegistrationForm = () => {
             <div
                 className="h-40 bg-cover bg-center rounded-t-lg overflow-hidden flex items-center justify-center"
                 style={{
-                    backgroundImage: `url(${selectedImage})`,
-                    filter: 'grayscale(100%)',
-                    opacity: '0.5'
+                    backgroundImage: `url(/uOBC/1.jpg)`,
                 }}
             >
             </div>
+            <div
+                        className="absolute inset-0 bg-black opacity-25"
+                        style={{ zIndex: 1 }}
+                    ></div>
             <p className='text-transparent text-xs'></p>
             <div className="p-6">
                 {/* Dropdown for class selection */}
