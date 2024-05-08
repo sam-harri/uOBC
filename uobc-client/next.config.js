@@ -3,7 +3,7 @@ const nextConfig = {
     images: {
         domains: ['placehold.co'], // Add any other domains you use for images here
     },
-    basePath: '/uobc-client/out',
+    basePath: 'uobc',
   // Add trailing slashes to all URLs
     trailingSlash: true,
     output: 'export',
