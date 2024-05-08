@@ -17,9 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-    <Head>
-        <link rel="icon" href="https://sam-harri.github.io/uOBC/favicon_io/favicon.ico" />
-    </Head>
+
     <body>
         {children}
     </body>
